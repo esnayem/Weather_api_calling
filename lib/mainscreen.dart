@@ -9,7 +9,8 @@ class MainScreen extends StatefulWidget {
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
-
+//@override the function()
+// new class for calling the api
 class _MainScreenState extends State<MainScreen> {
   WeatherService weatherService = WeatherService();
   Weather weather = Weather();
@@ -23,7 +24,8 @@ class _MainScreenState extends State<MainScreen> {
     super.initState();
     getWeather();
   }
-
+// this is the main dart program
+  // need to see the code
   void getWeather() async {
     weather = await weatherService.getWeatherData("Dhaka");
 
@@ -36,7 +38,7 @@ class _MainScreenState extends State<MainScreen> {
     print(weather.temperatureF);
     print(weather.condition);
   }
-
+// another @override function
   @override
   Widget build(BuildContext context) {
     return Scaffold(

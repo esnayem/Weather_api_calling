@@ -1,3 +1,4 @@
+// The Weather class for the information of weather
 class Weather {
   final double temperatureC;
   final double temperatureF;
